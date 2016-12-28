@@ -1,4 +1,4 @@
-# app/dashboards/admin_user_dashboard.rb
+require "administrate/base_dashboard"
 
 class AdminUserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
@@ -26,6 +26,7 @@ class AdminUserDashboard < Administrate::BaseDashboard
 
   SHOW_PAGE_ATTRIBUTES = [
     :posts,
+    :id,
     :email,
     :sign_in_count,
     :current_sign_in_at,
